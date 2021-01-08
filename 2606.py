@@ -20,4 +20,4 @@ cnt = 0
 for i in range(2, N+1):
     if com[com[i]] == 1: cnt+=1
 
-print(com, cnt)
+print(cnt)
