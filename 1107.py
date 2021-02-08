@@ -20,7 +20,7 @@ def find(num):
     for btn in btn_set:
         tmp_num = num + str(btn)
         min_cnt = min(min_cnt, dist(N, int(tmp_num))+len(tmp_num))
-        if len(num) < 6:
+        if len(tmp_num) < 6:
             find(tmp_num)
 
 find('') if M < 10 else ''
