@@ -19,7 +19,7 @@ def dfs(arr_num, set_num, depth):
                 dfs(arr_num + [num], set_num, depth+1)
 
 
-set_num = {i+1 for i in range(N)}
+set_num = sorted(list(map(int, input().split())))
 for num in set_num:
     dfs([num], set_num, 1)
 
